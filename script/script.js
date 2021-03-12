@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     e.preventDefault()
     cityname = promtValue()
     console.log(prompt)
-    const url = `http://api.openweathermap.org/data/2.5/forecast?q=${cityname}&units=metric&lang=ru&appid=${key}`
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityname}&units=metric&lang=ru&appid=${key}`
 
     fetch(url)
         .then(function (response) { return response.json() })
