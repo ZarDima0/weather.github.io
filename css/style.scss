@@ -1,4 +1,4 @@
-$padding: 1em;
+$padding: 0.7em;
 $icon-size: 50px;
 
 * {
@@ -10,14 +10,14 @@ $icon-size: 50px;
 html {
   font-family: Roboto, sans-serif;
 }
-input {
-  color: black;
-}
-.input_check {
-  input: {
-    color: black;
+form {
+  display: flex;
+  .form-control {
+    height: 500px;
+    margin-right: 1em;
+    height: 40px;
+    color: red;
   }
-
 }
 .weather {
   width: 100%;
@@ -43,13 +43,13 @@ html[data-theme="night"] .weather {
   margin-bottom: $padding *2;
 
   &__city {
-    font-size: 3em;
+    font-size: 2em;
   }
   &__description {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   &__temperature {
-    font-size: 4em;
+    font-size: 2em;
   }
 }
 
@@ -73,7 +73,7 @@ html[data-theme="night"] .weather {
   }
 
   &__temperature {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
@@ -93,7 +93,7 @@ html[data-theme="night"] .weather {
   }
 
   &__value {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
